@@ -85,7 +85,7 @@ And that changes everything about how to fix them.
 - **Excel Data Model:** Used to create calculated columns such as delay minutes, delay flag, refund flag, year, month, day of the week, and departure hour to support analysis.
 
 - **DAX:** Used to create custom measures, including Average Delay, Refund Rate, Cancellation Rate, and Percentage of Delayed Journeys.
-
+---
  ### Key DAX Measures Used
 ---
 
@@ -237,26 +237,22 @@ This suggests the station has a unique technical issue that requires a targeted 
 ### Infrastructure Improvements
 
 - Prioritise signal system upgrades at Manchester Piccadilly, London Euston, King's Cross, York, Liverpool Lime Street, London Paddington, and Reading, as these stations account for the highest share of delay minutes.
----
 
 ### Station-Specific Actions
 
 - Deploy a dedicated quick-response maintenance team at Birmingham New Street to address recurring equipment failures.
----
-
+  
 ### Operations & Staffing
 
 - Increase staffing and operational monitoring on Tuesday–Thursday, especially during the 8–9 AM morning peak period.
 
 - Improve train scheduling and passenger flow at the busiest stations to reduce congestion and delays.
----
 
 ### Customer Experience
 
 - Introduce automatic refunds for Off-Peak passengers when delays exceed 30 minutes.
 
 - Provide real-time delay alerts via SMS and mobile app to all passengers, regardless of ticket class.
----
 
 ### Weather & Disruption Preparedness
 
@@ -265,11 +261,7 @@ This suggests the station has a unique technical issue that requires a targeted 
 
 ## Dashboard
 ---
-One interactive dashboard was built in Excel
-covering all key performance areas — KPI cards,
-average delay by station, delay causes by ticket
-type, refund rates, delays by day and hour, and
-slicers for filtering by station, ticket type
+One interactive dashboard was built in Excel covering all key performance areas — KPI cards, average delay by station, delay causes by ticket type, refund rates, delays by day and hour, and slicers for filtering by station, ticket type
 and month.
 
 ![Dashboard — UK Railway Operations and Performance](images/railway-dashboard.png)
