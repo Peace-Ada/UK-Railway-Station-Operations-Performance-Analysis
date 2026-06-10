@@ -192,7 +192,6 @@ Signal failure is the leading cause of delays at every station, showing that the
 ![Average delay by station](images/railway1.png)
 
 ---
-
 ### Insight 2 — Delays peak on Wednesdays at 8–9 AM due to high passenger demand
 
 Wednesday records the highest average delays, followed by Tuesday and Thursday. This pattern matches the busiest travel days rather than an increase in technical faults.
@@ -203,6 +202,7 @@ Delays also peak between 8–9 AM during the morning rush hour, with weather con
 
 ![Delays by hour of day](images/railway3.png)
 
+---
 ### Insight 3 — Off-Peak passengers experience the worst delays and highest refund requests
 
 Off-Peak ticket holders experience the longest average delays at 49 minutes and have the highest refund request rate at 4.22%.
@@ -211,6 +211,7 @@ Despite facing the poorest service, these passengers do not receive automatic co
 
 ![Refund rate and delay by ticket type](images/railway4.png)
 
+---
 ### Insight 4 — Standard and First-Class passengers experience the same delay causes
 
 Both Standard and First-Class passengers are affected by the same delay causes, with signal failure ranking first and weather second.
@@ -219,6 +220,7 @@ There is no meaningful difference between ticket classes, indicating that delays
 
 ![Delay causes by ticket class](images/railway_ticket_class.png)
 
+---
 ### Insight 5 — Birmingham New Street has a station-specific equipment failure pattern
 
 While signal failure is the main cause of delays across most stations, Birmingham New Street experiences a higher number of equipment-related failures.
@@ -235,24 +237,26 @@ This suggests the station has a unique technical issue that requires a targeted 
 ### Infrastructure Improvements
 
 - Prioritise signal system upgrades at Manchester Piccadilly, London Euston, King's Cross, York, Liverpool Lime Street, London Paddington, and Reading, as these stations account for the highest share of delay minutes.
-
 ---
 
 ### Station-Specific Actions
 
 - Deploy a dedicated quick-response maintenance team at Birmingham New Street to address recurring equipment failures.
+---
 
 ### Operations & Staffing
 
 - Increase staffing and operational monitoring on Tuesday–Thursday, especially during the 8–9 AM morning peak period.
 
 - Improve train scheduling and passenger flow at the busiest stations to reduce congestion and delays.
+---
 
 ### Customer Experience
 
 - Introduce automatic refunds for Off-Peak passengers when delays exceed 30 minutes.
 
 - Provide real-time delay alerts via SMS and mobile app to all passengers, regardless of ticket class.
+---
 
 ### Weather & Disruption Preparedness
 
