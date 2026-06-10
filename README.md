@@ -174,167 +174,89 @@ Below are screenshots showing key parts of the data preparation process:
 ## KPI Overview
 ---
 
-| Metric | Value |
-|--------|-------|
-| Total Journey Records | 31,653 |
-| Period Covered | Jan – Apr 2024 |
-| Average Delay | 42.21 minutes |
-| % Journeys Delayed | 7% |
-| Cancellation Rate | 6% |
-| Refund Request Rate | 4% |
-| Highest Delay Station | Manchester Piccadilly (60 min avg) |
-| Lowest Delay Station | Edinburgh Waverley (15 min avg) |
-| Off-Peak Refund Rate | 4.22% (highest by ticket type) |
-| Advance Refund Rate | 3.48% |
-| Anytime Refund Rate | 2.58% |
-| #1 Delay Cause | Signal Failure (all stations) |
+The KPI cards show the following:
+
+![KPI Dashboard](images/railway_kpi_overview.png)
 
 ---
 
 ## Insights
 ---
 
-### Insight 1 — Station delays are concentrated, not spread evenly across the network
+### Insight 1 — Delays are concentrated in a few stations, not spread evenly across the network
 
-Manchester Piccadilly averages 60 minutes of delay
-and London Euston averages 54 minutes, pulling
-the network-wide average to 42 minutes. Edinburgh
-Waverley sits at the other end with just 15 minutes.
-Signal failure is the number one delay cause at
-every single station without exception, confirming
-this is an infrastructure problem, not a management
-one.
+Manchester Piccadilly has the highest average delay at 60 minutes, followed by London Euston at 54 minutes. These two stations increase the overall network average delay to 42 minutes. Edinburgh Waverley records the lowest average delay at just 15 minutes.
 
-![Average delay by station — attach your image here](images/railway1.png)
+Signal failure is the leading cause of delays at every station, showing that the issue is mainly related to infrastructure rather than daily operations.
 
-**Key Takeaway:**
-Delays are concentrated at specific busy stations.
-Fixing signal infrastructure at the top 7 stations
-addresses the majority of total network delay
-minutes.
+![Average delay by station](images/railway1.png)
 
 ---
 
-### Insight 2 — Delays peak on Wednesdays at 8–9 AM — driven by demand, not system failure
+### Insight 2 — Delays peak on Wednesdays at 8–9 AM due to high passenger demand
 
-Wednesday records the highest delays of the week
-followed by Tuesday and Thursday. This pattern
-aligns exactly with peak journey volume on those
-days not with any increase in system faults.
-The 8–9 AM delay spike matches commuter rush hour
-with weather compounding the effect specifically
-at 8 AM. This is the most important finding in
-the project: delays are predictable and manageable,
-not random.
+Wednesday records the highest average delays, followed by Tuesday and Thursday. This pattern matches the busiest travel days rather than an increase in technical faults.
 
-![Delays by day of week — attach your image here](images/railway2.png)
+Delays also peak between 8–9 AM during the morning rush hour, with weather conditions making disruptions worse around 8 AM. This shows that delays follow a predictable pattern.
 
-![Delays by hour of day — attach your image here](images/railway3.png)
+![Delays by day of week](images/railway2.png)
 
-**Key Takeaway:**
-Scale staffing and monitoring specifically on
-Tuesday–Thursday and during the 8–9 AM window.
-Deploy proactive weather protocols using 24-hour
-forecasts before morning operations begin.
+![Delays by hour of day](images/railway3.png)
 
----
+### Insight 3 — Off-Peak passengers experience the worst delays and highest refund requests
 
-### Insight 3 — Off-Peak passengers face the worst delays and the highest refund rate
+Off-Peak ticket holders experience the longest average delays at 49 minutes and have the highest refund request rate at 4.22%.
 
-Off-Peak ticket holders experience the longest
-average delays at 49 minutes and have the highest
-refund request rate at 4.22%. Despite facing the
-worst service outcome they receive no automatic
-compensation, they must actively request refunds
-and many do not bother. This is a hidden service
-failure in the data.
+Despite facing the poorest service, these passengers do not receive automatic compensation. Instead, they must submit refund requests themselves, leaving many eligible passengers uncompensated.
 
-![Refund rate and delay by ticket type — attach your image here](images/railway4.png)
+![Refund rate and delay by ticket type](images/railway4.png)
 
-**Key Takeaway:**
-Introduce automatic threshold-based refunds for
-Off-Peak passengers when delays exceed 30 minutes.
-This reduces complaints, rebuilds trust, and costs
-less than reactive dispute handling.
+### Insight 4 — Standard and First-Class passengers experience the same delay causes
+
+Both Standard and First-Class passengers are affected by the same delay causes, with signal failure ranking first and weather second.
+
+There is no meaningful difference between ticket classes, indicating that delays are driven by network infrastructure rather than service level.
+
+![Delay causes by ticket class](images/railway_ticket_class.png)
+
+### Insight 5 — Birmingham New Street has a station-specific equipment failure pattern
+
+While signal failure is the main cause of delays across most stations, Birmingham New Street experiences a higher number of equipment-related failures.
+
+This suggests the station has a unique technical issue that requires a targeted solution rather than a network-wide approach.
+
+![Birmingham New Street delay causes](images/railway_birmingham.png)
 
 ---
-
-### Insight 4 — Both Standard and First-Class passengers face identical delay causes
-
-Both Standard and First-Class passengers face the
-exact same delay causes in the exact same order,
-signal failure first, weather second. There is no
-meaningful difference by ticket class. This confirms
-the delay problem is entirely at the infrastructure
-and scheduling layer not the service level.
-Solving signal failure helps every passenger
-equally regardless of what they paid.
-
-![Delay causes by ticket class — attach your image here](images/railway_ticket_class.png)
-
-**Key Takeaway:**
-Roll out real-time SMS and app delay alerts
-uniformly to all passengers regardless of ticket
-class. The information gap between classes should
-close, not widen.
-
----
-
-### Insight 5 — Birmingham New Street has a specific technical failure pattern
-
-While signal failure dominates across the network
-Birmingham New Street shows a distinct pattern of
-equipment-related technical failures that require
-a station-specific response, separate from the
-wider signal upgrade programme.
-
-![Birmingham New Street delay causes — attach your image here](images/railway_birmingham.png)
-
-**Key Takeaway:**
-Deploy a dedicated quick-response maintenance team
-at Birmingham New Street to resolve equipment
-failures fast, this station needs a different
-solution from the rest of the network.
-
----
-
 ## Recommendations
+
 ---
 
-**Infrastructure**
-- Prioritise signal system upgrades at Manchester
-  Piccadilly, London Euston, King's Cross, York,
-  Liverpool, Paddington and Reading, these 7
-  stations account for the majority of network
-  delay minutes
+### Infrastructure Improvements
 
-**Station-Specific**
-- Deploy a quick-response maintenance team at
-  Birmingham New Street for equipment failure
-  response, this station requires a separate
-  technical solution
+- Prioritise signal system upgrades at Manchester Piccadilly, London Euston, King's Cross, York, Liverpool Lime Street, London Paddington, and Reading, as these stations account for the highest share of delay minutes.
 
-**Staffing & Scheduling**
-- Scale staffing on Tuesday–Thursday and during
-  the 8–9 AM window to match actual passenger
-  demand patterns
-- Reduce overcrowding at the five highest-traffic
-  stations through improved scheduling and
-  passenger flow management
+---
 
-**Passenger Experience**
-- Introduce automatic refunds for Off-Peak
-  passengers when delays exceed 30 minutes
-- Roll out uniform real-time SMS and app delay
-  alerts to all passengers regardless of ticket
-  class
+### Station-Specific Actions
 
-**Weather Response**
-- Use 24-hour forecasts to pre-alert passengers,
-  deploy backup transport options and inspect
-  tracks before morning peak operations begin
-  — weather compounds delays specifically at 8 AM
+- Deploy a dedicated quick-response maintenance team at Birmingham New Street to address recurring equipment failures.
 
+### Operations & Staffing
+
+- Increase staffing and operational monitoring on Tuesday–Thursday, especially during the 8–9 AM morning peak period.
+
+- Improve train scheduling and passenger flow at the busiest stations to reduce congestion and delays.
+
+### Customer Experience
+
+- Introduce automatic refunds for Off-Peak passengers when delays exceed 30 minutes.
+
+- Provide real-time delay alerts via SMS and mobile app to all passengers, regardless of ticket class.
+
+### Weather & Disruption Preparedness
+
+- Use 24-hour weather forecasts to prepare operations in advance, including track inspections and contingency planning before the morning peak period.
 ---
 
 ## Dashboard
