@@ -150,9 +150,7 @@ Below are screenshots showing key parts of the data preparation process:
 
 ![Missing Values](images/railway_blank_cells.png)
 
-![Calculated Columns](images/railway_calculated_columns.png)
-
-![Conditional Formatting](images/railway_conditional_formatting.png)
+![Calculated Columns & conditional formatting](images/railway_calculated_columns.png)
 
 ---
 
