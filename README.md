@@ -148,6 +148,7 @@ After cleaning, the dataset was reviewed and prepared for dashboard development 
 
 Below are screenshots showing key parts of the data preparation process:
 
+
 ![Missing Values](images/railway_blank_cells.png)
 
 ![Calculated Columns & conditional formatting](images/railway_calculated_columns.png)
