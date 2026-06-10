@@ -260,9 +260,10 @@ This suggests the station has a unique technical issue that requires a targeted 
 ---
 
 ## Dashboard
----
-One interactive dashboard was built in Excel covering all key performance areas — KPI cards, average delay by station, delay causes by ticket type, refund rates, delays by day and hour, and slicers for filtering by station, ticket type
-and month.
+
+An interactive Excel dashboard was built to analyse UK railway performance across key metrics, including delays, station performance, ticket types, and refund rates.
+
+It includes KPI cards, station-level delay analysis, delay causes by ticket type, refund rates, and time-based trends (day and hour), with slicers for filtering by station, ticket type, and month.
 
 ![Dashboard — UK Railway Operations and Performance](images/railway-dashboard.png)
 
@@ -293,7 +294,7 @@ shown the way.
 
 ---
 
-Thank you for reading!
+Thank you for reading.
 
 Let's connect:
 
