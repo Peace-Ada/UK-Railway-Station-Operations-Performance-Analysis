@@ -260,7 +260,7 @@ An interactive Excel dashboard was built to analyse UK railway performance acros
 
 It includes KPI cards, station-level delay analysis, delay causes by ticket type, refund rates, and time-based trends (day and hour), with slicers for filtering by station, ticket type, and month.
 
-![Dashboard — UK Railway Operations and Performance](images/railway-dashboard.png)
+![Dashboard — UK Railway Operations and Performance](images/railway-dashboard..png)
 
 ---
 
