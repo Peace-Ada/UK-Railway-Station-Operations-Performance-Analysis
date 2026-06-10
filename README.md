@@ -218,16 +218,13 @@ Both Standard and First-Class passengers are affected by the same delay causes, 
 
 There is no meaningful difference between ticket classes, indicating that delays are driven by network infrastructure rather than service level.
 
-![Delay causes by ticket class](images/railway_ticket_class.png)
+![Delay causes by ticket class](images/railway5.png)
 
 ---
-### Insight 5 — Birmingham New Street has a station-specific equipment failure pattern
+### Insight 5 — Birmingham New Street shows a distinct station-specific failure pattern
 
-While signal failure is the main cause of delays across most stations, Birmingham New Street experiences a higher number of equipment-related failures.
-
-This suggests the station has a unique technical issue that requires a targeted solution rather than a network-wide approach.
-
-![Birmingham New Street delay causes](images/railway_birmingham.png)
+While most stations are dominated by signal failure, Birmingham New Street shows a higher proportion of equipment-related failures. This makes it an outlier in the network and suggests a station-specific operational issue rather than a network-wide problem.
+![Birmingham New Street delay cause breakdown (pivot table analysis)](images/railway_birmingham_pivot.png)
 
 ---
 ## Recommendations
