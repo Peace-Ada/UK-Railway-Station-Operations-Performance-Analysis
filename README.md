@@ -92,13 +92,13 @@ And that changes everything about how to fix them.
 The following DAX measures were created to support the dashboard analysis.
 
 
-![Average Delay Measure](images/dax_average_delay.png)
+![Average Delay Measure](images/railway_dax_average_delay.png)
 
-![Refund Rate Measure](images/dax_refund_rate.png)
+![Refund Rate Measure](images/railway_dax_refund_rate.png)
 
-![Cancellation Rate Measure](images/dax_cancellation_rate.png)
+![Cancellation Rate Measure](images/railway_dax_cancellation_rate.png)
 
-![% Delayed Measure](images/dax_percentage_delayed.png)
+![% Delayed Measure](images/railway_dax_percentage_delayed.png)
 ![DAX Measures](images/railway_dax_measures.png)
 
 ---
